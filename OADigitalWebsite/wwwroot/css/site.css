@@ -1,5 +1,13 @@
+:root {
+  --overairPink: #EC008C;
+  --overairGrey: #474747;
+}
 * {
   scroll-behavior: smooth;
+  /*
+  margin: 0;
+  padding: 0;
+   */
 }
 html {
   font-size: 14px;
@@ -18,4 +26,41 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+nav {
+  height: 125px;
+  background-color: var(--overairGrey);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.navLinks {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+.logoImage {
+  width: 15%;
+  height: 15%;
+  float: left;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.navLink {
+  text-decoration: none;
+  color: #fff !important;
+  transition: 0.3s ease-in-out;
+}
+a a:visited {
+  color: #fff;
+}
+.navLink:hover {
+  color: var(--overairPink) !important;
+  transition: 0.3s ease-in-out;
 }
