@@ -14,9 +14,11 @@
   margin: 4px 4px;
   padding: 4px 4px;
 }
+.fontColour {
+  color: var(--overairPink);
+}
 a {
   text-decoration: none;
-  width: 25%;
 }
 li {
   list-style: none;
@@ -26,16 +28,28 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: var(--overairGrey);
+  /*background-color: var(--overairGrey);*/
   color: #fff;
 }
 .nav-links a {
-  color: #fff;
+  color: #fff !important;
   transition: 0.3s ease-in-out;
 }
 .nav-links a:hover {
-  color: var(--overairPink);
+  color: var(--overairPink) !important;
+  text-decoration: underline;
   transition: 0.3s ease-in-out;
+}
+.nav-links a:active {
+  color: #fff !important;
+  text-decoration: none;
+}
+.bg {
+  background-image: url("../Images/pexels-josh-sorenson-1714208.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 85vh;
 }
 .menu {
   display: flex;
@@ -57,12 +71,11 @@ input[type=checkbox]{
   color: var(--overairPink);
   transition: 0.5s ease-in-out;
 }
-
 @media (max-width: 768px) {
   .menu {
     display: none;
     position: absolute;
-    background-color: var(--overairGrey);
+    /*background-color: var(--overairGrey);*/
     right: 0;
     left: 0;
     text-align: center;
@@ -71,7 +84,7 @@ input[type=checkbox]{
   .menu li + li {
     margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu{
+  input[type=checkbox]:checked ~ .menu {
     display: block;
   }
   .hamburger {
@@ -81,4 +94,11 @@ input[type=checkbox]{
     width: 30%;
     height: 30%;
   }
+  .bg {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.headerTxt {
+  padding-top: 10%;
 }

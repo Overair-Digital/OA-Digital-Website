@@ -6,67 +6,35 @@
     <title>@ViewData["Title"] Overair Digital</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/OA.Digital.Website.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OADigitalWebsite.styles.css" asp-append-version="true" />
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3a79eafc68.js" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     
 </head>
-<body>
+<body class="bg">
 <header>
     <nav class="navbar">
-         <!-- LOGO -->
-        <img class="logoImage" src="Images/overair.svg" alt="Overair Digital Logo" />
-         <!-- NAVIGATION MENU -->
-         <ul class="nav-links">
-           <!-- USING CHECKBOX HACK -->
-           <input type="checkbox" id="checkbox_toggle" />
-           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-           <!-- NAVIGATION MENUS -->
-           <div class="menu">
-               <li>
-                   <a asp-action="Index" asp-controller="Home">Home</a>
-               </li>
-               <li>
-                   <a href="https://overair.co.uk" target="_blank">Overair</a>
-               </li>
-               <li>
-                   <a asp-action="Contact" asp-controller="Home">Contact</a>
-               </li>
-           </div>
-         </ul>
-       </nav>
-    <!--
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Overair - Digital</a>
+        <img class="logoImage" src="Images/overair.svg" alt="Overair Digital Logo"/>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="https://www.overair.co.uk/" target="_blank">Overair</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="menu">
+                <li>
+                    <a asp-action="Index" asp-controller="Home">Home</a>
+                </li>
+                <li>
+                    <a href="https://overair.co.uk" target="_blank">Overair</a>
+                </li>
+                <li>
+                    <a asp-action="Contact" asp-controller="Home">Contact</a>
+                </li>
             </div>
-
-        </div>
+        </ul>
     </nav>
-    -->
 </header>
 <main role="main" class="pb-3">
     @RenderBody()

@@ -8,6 +8,9 @@
 
     <ItemGroup>
       <None Include="wwwroot\Images\overair.svg" />
+      <None Include="wwwroot\Images\pexels-josh-sorenson-1714208.jpg" />
+      <None Include="wwwroot\Images\pexels-julia-m-cameron-4144294.jpg" />
+      <None Include="wwwroot\Images\pexels-soumil-kumar-735911.jpg" />
     </ItemGroup>
 
 </Project>
