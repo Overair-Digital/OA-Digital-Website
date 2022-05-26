@@ -17,6 +17,9 @@
 .fontColour {
   color: var(--overairPink);
 }
+.fontWhite {
+  color: #fff;
+}
 a {
   text-decoration: none;
 }
@@ -28,7 +31,6 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  /*background-color: var(--overairGrey);*/
   color: #fff;
 }
 .nav-links a {
@@ -45,7 +47,8 @@ li {
   text-decoration: none;
 }
 .bg {
-  background-image: url("../Images/pexels-josh-sorenson-1714208.jpg");
+  background-image: url("../Images/pexels-soumil-kumar-735911.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -75,7 +78,6 @@ input[type=checkbox]{
   .menu {
     display: none;
     position: absolute;
-    /*background-color: var(--overairGrey);*/
     right: 0;
     left: 0;
     text-align: center;
