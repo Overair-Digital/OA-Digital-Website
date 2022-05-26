@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OA.Digital.Website.styles.css" asp-append-version="true" />
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3a79eafc68.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    
 </head>
 <body>
 <header>
     <nav class="navbar">
-        <a asp-action="Index" asp-controller="Home"><img class="logoImage" src="./Images/overair.svg" alt="Overair Digital Logo"/></a>
-        <div>
-            <ul class="navLinks">
-                <li class="navItems">
-                    <a asp-controller="Home" asp-action="Index">Home</a>
-                </li>
-                <li class="navItems">
-                    <a href="https://overair.co.uk" target="_blank">Overair</a>
-                </li>
-                <li class="navItems">
-                    <a asp-controller="Home" asp-action="Contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+         <!-- LOGO -->
+        <img class="logoImage" src="Images/overair.svg" alt="Overair Digital Logo" />
+         <!-- NAVIGATION MENU -->
+         <ul class="nav-links">
+           <!-- USING CHECKBOX HACK -->
+           <input type="checkbox" id="checkbox_toggle" />
+           <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+           <!-- NAVIGATION MENUS -->
+           <div class="menu">
+               <li>
+                   <a asp-action="Index" asp-controller="Home">Home</a>
+               </li>
+               <li>
+                   <a href="https://overair.co.uk" target="_blank">Overair</a>
+               </li>
+               <li>
+                   <a asp-action="Contact" asp-controller="Home">Contact</a>
+               </li>
+           </div>
+         </ul>
+       </nav>
     <!--
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
