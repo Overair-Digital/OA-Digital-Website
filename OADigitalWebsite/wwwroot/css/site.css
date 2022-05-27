@@ -92,7 +92,8 @@ input[type="checkbox"] {
     position: fixed;
     top: 80px;
     left: -100%;
-    background: #111;
+    /*background: #111;*/
+    background: rgba(17, 17, 17, 0.8);
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -136,7 +137,11 @@ input[type="checkbox"] {
   z-index: -1;
   width: 100%;
   padding: 0 30px;
-  color: #1b1b1b;
+}
+.flex {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .bg {
   position: absolute;
@@ -147,4 +152,74 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   width: 100vw;
   height: 75vw;
+}
+.btn {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  width: 130px;
+  opacity: 1;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn .btnspan {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.btn:hover {
+  color: black !important;
+  background-color: #fff;
+  animation: btnrotate 0.7s ease-in-out both;
+}
+
+.btn:hover .btnspan {
+  color: black;
+  animation: btnstorm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes btnrotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes btnstorm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
 }
