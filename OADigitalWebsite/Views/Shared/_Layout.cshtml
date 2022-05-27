@@ -7,35 +7,27 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OADigitalWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3a79eafc68.js" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     
 </head>
-<body class="bg">
-<header>
-    <nav class="navbar">
-        <img class="logoImage" src="Images/overair.svg" alt="Overair Digital Logo"/>
-
-        <ul class="nav-links">
-            <input type="checkbox" id="checkbox_toggle"/>
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-            <div class="menu">
-                <li>
-                    <a asp-action="Index" asp-controller="Home">Home</a>
-                </li>
-                <li>
-                    <a href="https://overair.co.uk" target="_blank">Overair</a>
-                </li>
-                <li>
-                    <a asp-action="Contact" asp-controller="Home">Contact</a>
-                </li>
-            </div>
-        </ul>
-    </nav>
-</header>
+<body>
+<div class="bg"></div>
+<nav>
+    <img class="logoImage" src="Images/overair.svg" alt="Overair Digital Logo"/>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+        <li><a class="active" asp-action="Index" asp-controller="Home">Home</a></li>
+        <li><a href="https://overair.co.uk" target="_blank">Overair</a></li>
+        <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+    </ul>
+</nav>
 <main role="main" class="pb-3">
     @RenderBody()
 </main>
@@ -46,9 +38,9 @@
     </div>
 </footer>
 -->
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
