@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome -->
     
 </head>
@@ -23,9 +24,9 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul>
-            <li><a class="active" asp-action="Index" asp-controller="Home">Home</a></li>
-            <li><a href="https://overair.co.uk" target="_blank">Overair</a></li>
-            <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+            <li><span class="iconPreset"><i class="fa-solid fa-house"></i></span><a class="active" asp-action="Index" asp-controller="Home">Home</a></li>
+            <li><span class="iconPreset"><i class="fa-solid fa-globe"></i></span><a href="https://overair.co.uk" target="_blank">Overair</a></li>
+            <li><span class="iconPreset"><i class="fa-solid fa-address-book"></i></span><a asp-action="Contact" asp-controller="Home">Contact</a></li>
         </ul>
     </nav>
 </header>
