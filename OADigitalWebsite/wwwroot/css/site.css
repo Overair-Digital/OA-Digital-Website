@@ -233,9 +233,9 @@ input[type="checkbox"] {
 }
 .iconUp {
   position: relative;
-  bottom: 13rem;
+  bottom: 3.5rem;
   color: var(--overairPink) !important;
-  border-bottom: 1px solid var(--overairPink);
+  /*border-bottom: 1px solid white;*/
 }
 .headerDown {
   padding-top: 4.5rem;
@@ -254,8 +254,20 @@ input[type="checkbox"] {
   background-position: center;
   background-size: cover;
 }
-.mainPage1 {
-  padding-block: 10rem;
-  margin-block-end: 0;
+.mainPageTopper {
+  height: 100px;
+  width: 100vw;
   background-color: var(--overairGrey);
+}
+.mainPage {
+  height: 500px;
+  width: 100vw;
+  background-color: var(--overairGrey);
+}
+.mainContentL {
+  height: 200px;
+  width: 50%;
+  border: 1px solid white;
+  margin-left: 20px;
+  padding-top: 20px;
 }
