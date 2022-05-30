@@ -24,7 +24,7 @@ nav {
   display: flex;
   height: 80px;
   width: 100%;
-  /*background: #1b1b1b;*/
+  background: rgb(27, 27, 27);
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 25px;
@@ -84,7 +84,7 @@ input[type="checkbox"] {
     content: "\f00d";
   }
   nav {
-    background: rgba(27, 27, 27, 0.5);
+    background: rgb(27, 27, 27);
     width: 100%;
     left: -100%;
   }
@@ -92,8 +92,8 @@ input[type="checkbox"] {
     position: fixed;
     top: 80px;
     left: -100%;
-    /*background: #111;*/
-    background: rgba(17, 17, 17, 0.8);
+    background: #111;
+    /* background: rgba(17, 17, 17, 0.8); */
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -128,9 +128,10 @@ input[type="checkbox"] {
     height: 100vh !important;
   }
 }
+/*
 .content {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -138,23 +139,25 @@ input[type="checkbox"] {
   width: 100%;
   padding: 0 30px;
 }
+ */
 .flex {
   display: flex;
   align-content: center;
   justify-content: center;
 }
+/*
 .bg {
+  background-image: url("../Images/background.png");
   position: absolute;
   z-index: -1;
-  background-image: url("../Images/background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 75vh;
   width: 100vw;
-  height: 75vw;
 }
+ */
 .btn {
-  position: relative;
   outline: none;
   text-decoration: none;
   border-radius: 50px;
@@ -164,30 +167,26 @@ input[type="checkbox"] {
   cursor: pointer;
   text-transform: uppercase;
   height: 45px;
-  width: 130px;
+  width: 250px;
   opacity: 1;
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
-
 .btn .btnspan {
   color: #fff;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.7px;
 }
-
 .btn:hover {
   color: black !important;
   background-color: #fff;
   animation: btnrotate 0.7s ease-in-out both;
 }
-
 .btn:hover .btnspan {
   color: black;
   animation: btnstorm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
-
 @keyframes btnrotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
@@ -205,7 +204,6 @@ input[type="checkbox"] {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-
 @keyframes btnstorm {
   0% {
     transform: translate3d(0, 0, 0) translateZ(0);
@@ -222,4 +220,16 @@ input[type="checkbox"] {
   100% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
+}
+.bg{
+  padding-block: 15rem;
+  margin-block-end: 0;
+  background-image: url("../Images/background.png");
+  background-position: center;
+  background-size: cover;
+}
+.byan {
+  height: 150px;
+  width: 100vw;
+  background-color: #7b9aa7;
 }
