@@ -1,6 +1,7 @@
 :root {
   --overairPink: #EC008C;
   --overairGrey: #474747;
+  --overairBlack: #000000;
 }
 * {
   scroll-behavior: smooth;
@@ -13,6 +14,9 @@
 }
 .fontWhite {
   color: #fff;
+}
+.fontBlack {
+  color: var(--overairBlack);
 }
 a {
   text-decoration: none;
@@ -43,7 +47,7 @@ nav ul li {
 }
 nav ul li a {
   height: 35%;
-  color: #fff !important;
+  color: rgb(250, 249, 246) !important;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -58,7 +62,7 @@ nav ul li a:hover {
   color: var(--overairPink) !important;
 }
 nav .menu-btn i {
-  color: #fff;
+  color: rgb(250, 249, 246);
   font-size: 22px;
   cursor: pointer;
   display: none;
@@ -160,14 +164,14 @@ input[type="checkbox"] {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 .btn .btnspan {
-  color: #fff;
+  color: rgb(250, 249, 246);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.7px;
 }
 .btn:hover {
   color: black !important;
-  background-color: #fff;
+  background-color: rgb(250, 249, 246);
   animation: btnrotate 0.7s ease-in-out both;
 }
 .btn:hover .btnspan {
@@ -288,13 +292,13 @@ input[type="checkbox"] {
   }
   .section-container .columns.image {
     display: block;
-    order: 1;
+    order: 2;
     width: 100%;
     height: 250px;
   }
   .section-container .columns.content {
     display: block;
-    order: 2;
+    order: 1;
     width: 100%;
   }
   .section-container .columns.content .content-container {
