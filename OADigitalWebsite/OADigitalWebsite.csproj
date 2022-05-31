@@ -13,4 +13,8 @@
       <None Include="wwwroot\Images\pexels-soumil-kumar-735911.jpg" />
     </ItemGroup>
 
+    <ItemGroup>
+      <TypeScriptCompile Include="wwwroot\js\site.ts" />
+    </ItemGroup>
+
 </Project>
