@@ -239,59 +239,68 @@ input[type="checkbox"] {
   width: 100vw;
   background-color: var(--overairGrey);
 }
-.AndroidSection {
+/* Main Content Page */
+
+.section-container {
   background-color: var(--overairGrey);
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 100vw;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
-.mainContentL {
-  height: 100%;
-  width: 100%;
-  /* border: 1px solid white; */
-  margin-left: 20px;
-  padding-top: 20px;
-}
-.innerContent {
+.section-container .columns {
+  flex: 0 0 auto;
   width: 50%;
 }
-.imageR {
-  float: right;
-  position: relative;
-  bottom: 12rem;
-  width: 550px;
+.section-container .columns.image {
+  background-position: center;
   background-repeat: no-repeat;
 }
-.AppleSection {
-  background-color: #9A9595;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 100vw;
+.section-container .columns.content .content-container {
+  padding: 40px 50px;
 }
-.mainContentR {
-  height: 100%;
-  width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+.section-container .columns.content .content-container h1 {
+  font-weight: 1000;
+  font-size: 30px;
 }
-.innerContentR {
-  text-align: right;
+.section-container .columns.content .content-container .android {
+  border-bottom: 3px solid rgb(46, 223, 132);
+  border-radius: 5px;
 }
-/* Main Content Page */
-#page .section1 {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.section-container .columns.content .content-container .apple {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
 }
-.pinkbox {
-  background: var(--overairGrey);
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.section-container .columns.content .content-container .web {
+  border-bottom: 3px solid rgb(235, 89, 40);
+  border-radius: 5px;
 }
-.imgCon img {
-  background: var(--overairGrey);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-repeat: no-repeat;
+.section-container .columns.content .content-container p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+@media screen and (max-width:767px) {
+  .section-container {
+    flex-flow: row wrap;
+  }
+  .section-container .columns.image {
+    display: block;
+    order: 1;
+    width: 100%;
+    height: 250px;
+  }
+  .section-container .columns.content {
+    display: block;
+    order: 2;
+    width: 100%;
+  }
+  .section-container .columns.content .content-container {
+    padding: 20px 35px;
+  }
+  .section-container .columns.content .content-container h1 {
+    margin-bottom: 5px;
+  }
 }

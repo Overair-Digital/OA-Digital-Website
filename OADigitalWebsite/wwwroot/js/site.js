@@ -23,3 +23,4 @@ function onMouseOver () {
 function onMouseOut () {
     appleIcon.classList.remove('fa-beat-fade');
 }
+// Apple Icon
