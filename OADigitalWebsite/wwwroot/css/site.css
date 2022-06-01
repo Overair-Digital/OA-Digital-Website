@@ -24,6 +24,7 @@ a {
 li {
   list-style: none;
 }
+/* Navbar */
 nav {
   display: flex;
   height: 80px;
@@ -144,6 +145,7 @@ input[type="checkbox"] {
     width: 100%;
   }
 }
+/* Navbar */
 .flex {
   display: flex;
   align-content: center;
@@ -243,8 +245,6 @@ input[type="checkbox"] {
   width: 100vw;
   background-color: var(--overairGrey);
 }
-/* Main Content Page */
-
 .section-container {
   background-color: var(--overairGrey);
   --bs-gutter-x: 1.5rem;
@@ -267,6 +267,10 @@ input[type="checkbox"] {
   font-weight: 1000;
   font-size: 30px;
 }
+.section-container .columns.content .content-container h2 {
+  font-weight: 1200;
+  font-size: 25px;
+}
 .section-container .columns.content .content-container .android {
   border-bottom: 3px solid rgb(46, 223, 132);
   border-radius: 5px;
@@ -277,6 +281,14 @@ input[type="checkbox"] {
 }
 .section-container .columns.content .content-container .web {
   border-bottom: 3px solid rgb(235, 89, 40);
+  border-radius: 5px;
+}
+.section-container .columns.content .overairD {
+  border-bottom: 3px solid var(--overairPink);
+  border-radius: 5px;
+}
+.section-container .columns.content .loc {
+  border-bottom: 3px solid rgb(254, 3, 0);
   border-radius: 5px;
 }
 .section-container .columns.content .content-container p {
@@ -307,6 +319,10 @@ input[type="checkbox"] {
   .section-container .columns.content .content-container h1 {
     margin-bottom: 5px;
   }
+  .section-container .columns.content .content-container h2 p {
+    justify-content: center;
+    align-content: center;
+  }
 }
 #floatDoodle {
   animation: twist 5s alternate ease-in-out infinite;
@@ -324,10 +340,10 @@ input[type="checkbox"] {
 }
 @keyframes walk {
   from {
-    transform: translateX(25px);
+    transform: translateX(50px);
   }
   to {
-    transform: translateX(-25px);
+    transform: translateX(-35px);
   }
 }
 #meditateDoodle {
@@ -340,4 +356,29 @@ input[type="checkbox"] {
   to {
     transform: translateY(-15px);
   }
+}
+/* Main Content Page */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+td, th {
+  /*border: 1px solid var(--overairPink);*/
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: rgba(102, 102, 102, 0.2);
+}
+input[type=text], input[type=email] {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 2px;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 100px 100px 80px rgba(0, 0, 0, 0.07);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--overairPink);
+  background-color: #FAF9F6FF;
 }
