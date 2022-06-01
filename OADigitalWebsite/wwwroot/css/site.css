@@ -308,3 +308,36 @@ input[type="checkbox"] {
     margin-bottom: 5px;
   }
 }
+#floatDoodle {
+  animation: twist 5s alternate ease-in-out infinite;
+}
+@keyframes twist {
+  from {
+    transform: rotate(6deg);
+  }
+  to {
+    transform: rotate(-6deg);
+  }
+}
+#icecreamDoodle {
+  animation: walk 4s alternate ease-in-out infinite;
+}
+@keyframes walk {
+  from {
+    transform: translateX(25px);
+  }
+  to {
+    transform: translateX(-25px);
+  }
+}
+#meditateDoodle {
+  animation: levitate 2s alternate ease-in-out infinite;
+}
+@keyframes levitate {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
