@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 .fontColour {
   color: var(--overairPink);
@@ -188,6 +189,38 @@ input[type="checkbox"] {
 }
 .btn:hover .btnspan {
   color: black;
+  animation: btnstorm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+.btn2 {
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  width: 100%;
+  opacity: 1;
+  border: 1px solid black;
+  background-color: #FAF9F6FF !important;
+}
+.btn2 .btnspan2 {
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+.btn2:hover {
+  color: black !important;
+  background-color: var(--overairPink) !important;
+  border: 1px solid #FAF9F6FF !important;
+  animation: btnrotate 0.7s ease-in-out both;
+}
+.btn2:hover .btnspan2 {
+  color: #FAF9F6FF;
   animation: btnstorm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
@@ -385,8 +418,29 @@ input[type=text], input[type=email] {
   box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 100px 100px 80px rgba(0, 0, 0, 0.07);
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--overairPink);
+  border-bottom: 1px solid var(--overairPink) !important;
   background-color: #FAF9F6FF;
+}
+.formControl .error input {
+  border: 1px solid #FE0300;
+  animation: shake;
+}
+.formControl .success input {
+  border: 1px solid rgb(46, 223, 132);
+}
+.formControl small {
+  visibility: hidden;
+}
+@keyframes shake {
+  33% {
+    transform: translateX(4px);
+  }
+  66% {
+    transform: translateX(-4px);
+  }
+  99% {
+    transform: translateX(4px);
+  }
 }
 .footerr {
   background-color: var(--overairGrey);

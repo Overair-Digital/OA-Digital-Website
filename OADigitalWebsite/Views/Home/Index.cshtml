@@ -59,7 +59,7 @@
     </div>
     <div class="columns content">
         <div class="content-container" style="background-color: rgb(250, 249, 246);">
-            <h1 class="android"><span><i class="fa-brands fa-android" style="color: rgb(46,223,132); padding-right: 0.5rem; position: relative; top: 5px;" onmouseout="onmouseOut();" onmouseover="onmouseOver();"></i></span>Android Apps</h1>
+            <h1 class="android"><span><i class="fa-brands fa-android" style="color: rgb(46, 223, 132); padding-right: 0.5rem; position: relative; top: 5px;" onmouseout="onmouseOut();" onmouseover="onmouseOver();"></i></span>Android Apps</h1>
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
@@ -86,7 +86,7 @@
     </div>
 </div>
 
-<form action="https://formsubmit.co/info@overair.co.uk" method="POST" enctype="text/plain">
+<form id="form" action="https://formsubmit.co/kacperileon@gmail.com" method="POST" enctype="text/plain">
     <div class="section-container fontBlack" style="background-color: #FAF9F6FF;">
         <div class="columns content">
             <div class="content-container">
@@ -104,23 +104,23 @@
                     </tr>
                     <tr>
                         <td>Monday</td>
-                        <td>9:30am - 17pm</td>
+                        <td>9:30am - 5pm</td>
                     </tr>
                     <tr>
                         <td>Tuesday</td>
-                        <td>9:30am - 17pm</td>
+                        <td>9:30am - 5pm</td>
                     </tr>
                     <tr>
                         <td>Wednesday</td>
-                        <td>9:30am - 17pm</td>
+                        <td>9:30am - 5pm</td>
                     </tr>
                     <tr>
                         <td>Thursday</td>
-                        <td>9:30am - 17pm</td>
+                        <td>9:30am - 5pm</td>
                     </tr>
                     <tr>
                         <td>Friday</td>
-                        <td>9:30am - 17pm</td>
+                        <td>9:30am - 5pm</td>
                     </tr>
                     <tr>
                         <td>Saturday</td>
@@ -141,7 +141,7 @@
                     <span><i class="fa-solid fa-at" style="color: #EC008C; margin-right: 0.5rem;"></i>Email Address - info@overair.co.uk</span>
                 </p>
                 <p>
-                    <span><i class="fa-solid fa-location-dot" style="color: rgb(254, 3, 0); margin-right: 0.5rem;"></i><a href="https://www.google.com/maps/place/Southernhay+W,+Exeter+EX1+1PJ/50.7226905,-3.5280412,243m/data=!3m1!1e3!4m5!3m4!1s0x486da43c5160fc15:0xcdf1d91f520ff4f9!8m2!3d50.7226747!4d-3.5272591" target="_blank">Overair Digital</a> - Lower Ground Floor, 18 Southernhay West, Exeter - EX1 1PJ</span>
+                    <span><i class="fa-solid fa-location-dot" style="color: rgb(254, 3, 0); margin-right: 0.5rem;"></i><a href="https://www.google.com/maps/place/Southernhay+W,+Exeter+EX1+1PJ/50.7226905,-3.5280412,243m/data=!3m1!1e3!4m5!3m4!1s0x486da43c5160fc15:0xcdf1d91f520ff4f9!8m2!3d50.7226747!4d-3.5272591" target="_blank" style="color: #EC008C !important;">Overair Digital</a> - Lower Ground Floor, 18 Southernhay West, Exeter - EX1 1PJ</span>
                 </p>
             </div>
         </div>
@@ -150,12 +150,24 @@
                 <div class="ok">
                     <h1 class="overairD"><span><i class="fa-solid fa-face-smile" style="margin-right: 0.5rem; color: rgb(247, 224, 23);"></i></span>Write Us An Email</h1>
                     <input type="hidden" name="_captcha" value="false"/> <!-- Disables reCAPTCHA -->
-    
-                    <input type="text" placeholder="Name" name="Name" required/>
-                    <input type="email" placeholder="Email" name="Email" required/>
-                    <input type="text" placeholder="Message" name="Message" required/>
-                    <button class="btn" type="submit" style="border: 1px solid black; width: 100%;">
-                        <span class="btnspan" style="color: black;">Submit</span>
+                    
+                    <div class="formControl">
+                        <input class="error" id="name" type="text" placeholder="Name" name="Name" />
+                        <small>Error Message</small>
+                    </div>
+                    
+                    <div class="formControl">
+                        <input class="success" id="email" type="email" placeholder="Email" name="Email" />
+                        <small>Error Message</small>
+                    </div>
+                    
+                    <div class="formControl">
+                        <input id="message" type="text" placeholder="Message" name="Message" />
+                        <small>Error Message</small>
+                    </div>
+                    
+                    <button class="btn2" type="submit">
+                        <span class="btnspan2">Submit</span>
                     </button>
                 </div>
             </div>
