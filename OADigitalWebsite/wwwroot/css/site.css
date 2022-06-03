@@ -421,7 +421,7 @@ input[type=text], input[type=email] {
   border-bottom: 1px solid var(--overairPink) !important;
   background-color: #FAF9F6FF;
 }
-.formControl .error input {
+.section-container .columns.content .content-container .formControl .error input {
   border: 1px solid #FE0300;
   animation: shake;
 }
@@ -446,4 +446,12 @@ input[type=text], input[type=email] {
   background-color: var(--overairGrey);
   height: 75px;
   width: 100vw;
+}
+.scrollTracker {
+  z-index: 3;
+  position: fixed;
+  inset: 0 0 auto;
+  height: 0.5rem;
+  background-color: #0b5ed7;
+  transform-origin: left;
 }
