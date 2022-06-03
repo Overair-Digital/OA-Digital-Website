@@ -107,20 +107,85 @@ scrollTracker.animate(
 );
 */
 
-const arrowDown = document.querySelector('.ok');
+const arrowDown = document.querySelector('.arrow');
+const imgOffSetTop = arrowDown.offsetTop;
+const imgHeight = arrowDown.offsetHeight;
 
 const animatedArrowDown = new ScrollTimeline({
     scrollOffsets: [
-        { target: arrowDown, edge: "end", threshold: "1" },
-        { target: arrowDown, edge: "start", threshold: "1" }
+        //{ target: arrowDown, edge: "end", threshold: "1" },
+        //{ target: arrowDown, edge: "start", threshold: "1" }
+        CSS.px(imgOffSetTop + imgHeight - window.innerHeight),
+        CSS.px(imgOffSetTop - 350)
     ],
 });
-
 arrowDown.animate(
     {
         transform: ["translateY(100px)", "translateY(0px)"],
+        opacity: ["0", "1"],
     }, {
         duration: 1,
+        easing: "linear",
         timeline: animatedArrowDown
     }
+);
+
+const appleBorder = document.querySelector('.apple');
+const h1topOffset = appleBorder.offsetTop; //Apple border dims
+const h1height = appleBorder.offsetHeight;
+
+const animatedH1 = new ScrollTimeline({
+    scrollOffsets: [
+        CSS.px(h1topOffset + h1height - window.innerHeight),
+        CSS.px(h1topOffset - 250)
+    ]
+});
+appleBorder.animate(
+    {
+        transform: ["scaleX(0)", "scaleX(1)"],
+    }, {
+        duration: 1,
+        easing: "linear",
+        timeline: animatedH1
+    },
+);
+
+const androidBorder = document.querySelector('.android');
+const androidOffsetTop = androidBorder.offsetTop; //Android border dims
+const androidHeight = androidBorder.offsetHeight;
+
+const animatedH1A = new ScrollTimeline({
+    scrollOffsets: [
+        CSS.px(androidOffsetTop + androidHeight - window.innerHeight),
+        CSS.px(androidOffsetTop - 250)
+    ]
+});
+androidBorder.animate(
+    {
+        transform: ["scaleX(0)", "scaleX(1)"],
+    }, {
+        duration: 1,
+        easing: "linear",
+        timeline: animatedH1A
+    },
+);
+
+const htmlBorder = document.querySelector('.web');
+const htmlOffsetTop = htmlBorder.offsetTop; //Html border dims
+const htmlHeight = htmlBorder.offsetHeight;
+
+const animatedH1W = new ScrollTimeline({
+    scrollOffsets: [
+        CSS.px(htmlOffsetTop + htmlHeight - window.innerHeight),
+        CSS.px(htmlOffsetTop - 250)
+    ]
+});
+htmlBorder.animate(
+    {
+        transform: ["scaleX(0)", "scaleX(1)"],
+    }, {
+        duration: 1,
+        easing: "linear",
+        timeline: animatedH1W
+    },
 );

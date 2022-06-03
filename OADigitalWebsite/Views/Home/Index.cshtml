@@ -7,7 +7,6 @@
 </head>
 
 <body>
-<div class="scrollTracker"></div>
 <div class="bg">
     <div class="text-center fontWhite">
         <h2>Websites or apps, all available to aquire in one location!</h2>
@@ -34,7 +33,7 @@
 </div>
 
 <div class="mainPageTopper">
-    <div class="text-center iconUp ok">
+    <div class="text-center iconUp arrow">
         <span><i class="fa-solid fa-arrow-down fa-10x"></i></span>
     </div>
 </div>
@@ -42,7 +41,8 @@
 <div class="section-container fontWhite">
     <div class="columns content">
         <div class="content-container">
-            <h1 class="apple"><span><i class="fa-brands fa-apple" style="padding-right: 0.5rem;" onmouseout="onMouseOut();" onmouseover="onMouseOver();"></i></span>Apple Apps</h1>
+            <h1><span><i class="fa-brands fa-apple" style="padding-right: 0.5rem;" onmouseout="onMouseOut();" onmouseover="onMouseOver();"></i></span>Apple Apps</h1>
+            <div class="apple"></div>
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
@@ -60,7 +60,8 @@
     </div>
     <div class="columns content">
         <div class="content-container" style="background-color: rgb(250, 249, 246);">
-            <h1 class="android"><span><i class="fa-brands fa-android" style="color: rgb(46, 223, 132); padding-right: 0.5rem; position: relative; top: 5px;" onmouseout="onmouseOut();" onmouseover="onmouseOver();"></i></span>Android Apps</h1>
+            <h1><span><i class="fa-brands fa-android" style="color: rgb(46, 223, 132); padding-right: 0.5rem; position: relative; top: 5px;" onmouseout="onmouseOut();" onmouseover="onmouseOver();"></i></span>Android Apps</h1>
+            <div class="android"></div>
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
@@ -74,7 +75,8 @@
 <div class="section-container fontWhite">
     <div class="columns content">
         <div class="content-container">
-            <h1 class="web"><span><i class="fa-brands fa-html5" style="color: rgb(235, 89, 40); padding-right: 0.5rem;"></i></span>Websites</h1>
+            <h1><span><i class="fa-brands fa-html5" style="color: rgb(235, 89, 40); padding-right: 0.5rem;"></i></span>Websites</h1>
+            <div class="web"></div>
             <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
@@ -91,7 +93,8 @@
     <div class="section-container fontBlack" style="background-color: #FAF9F6FF;">
         <div class="columns content">
             <div class="content-container">
-                <h1 class="overairD"><span><i class="fa-solid fa-paper-plane" style="color: #666666; margin-right: 0.5rem;"></i></span>Contact</h1>
+                <h1><span><i class="fa-solid fa-paper-plane" style="color: #666666; margin-right: 0.5rem;"></i></span>Contact</h1>
+                <div class="overairD"></div>
                 <p>
                     We're always willing to help out with any queries! Either will out the email form to the right of you or you can come by and have a chat with us. You're also able to give us a ring and book an appoitment.
                 </p>
@@ -131,10 +134,16 @@
                         <td>Sunday</td>
                         <td>Closed</td>
                     </tr>
+                    <tr style="border-bottom: 1px solid rgba(102, 102, 102, 0.2);">
+                        <td>Bank Holidays</td>
+                        <td>Closed</td>
+                    </tr>
                 </table>
+                <!--
                 <p style="margin-top: 0.5rem;">
                     <span><i class="fa-solid fa-star" style="color: rgb(247, 224, 23); margin-right: 0.5rem;"></i>Closed Bank Holidays</span>
                 </p>
+                -->
                 <p>
                     <span><i class="fa-solid fa-phone" style="color: #EC008C; margin-right: 0.5rem;"></i>Phone Number - 07577 607224</span>
                 </p>
@@ -149,7 +158,8 @@
         <div class="columns content">
             <div class="content-container">
                 <div class="ok">
-                    <h1 class="overairD"><span><i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: #666666;"></i></span>Write Us An Email</h1>
+                    <h1><span><i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: #666666;"></i></span>Write Us An Email</h1>
+                    <div class="overairD"></div>
                     <input type="hidden" name="_captcha" value="false"/> <!-- Disables reCAPTCHA -->
 
                     <div class="formControl">

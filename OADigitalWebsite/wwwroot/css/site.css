@@ -317,14 +317,17 @@ input[type="checkbox"] {
 .section-container .columns.content .content-container .android {
   border-bottom: 3px solid rgb(46, 223, 132);
   border-radius: 5px;
+  transform-origin: right;
 }
 .section-container .columns.content .content-container .apple {
   border-bottom: 3px solid rgb(255, 255, 255);
   border-radius: 5px;
+  transform-origin: left;
 }
 .section-container .columns.content .content-container .web {
   border-bottom: 3px solid rgb(235, 89, 40);
   border-radius: 5px;
+  transform-origin: left;
 }
 .section-container .columns.content .overairD {
   border-bottom: 3px solid var(--overairPink);
@@ -407,7 +410,7 @@ td, th {
   padding: 8px;
   text-align: left;
 }
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: rgba(102, 102, 102, 0.2);
 }
 input[type=text], input[type=email] {
@@ -446,12 +449,4 @@ input[type=text], input[type=email] {
   background-color: var(--overairGrey);
   height: 75px;
   width: 100vw;
-}
-.scrollTracker {
-  z-index: 3;
-  position: fixed;
-  inset: 0 0 auto;
-  height: 0.5rem;
-  background-color: #0b5ed7;
-  transform-origin: left;
 }
