@@ -13,4 +13,13 @@
       <None Include="wwwroot\Images\pexels-soumil-kumar-735911.jpg" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\Icons" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\Icons\Github\github.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\Icons\Github\github.svg" />
+    </ItemGroup>
+
 </Project>

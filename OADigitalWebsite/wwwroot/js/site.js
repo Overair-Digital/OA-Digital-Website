@@ -13,55 +13,57 @@ form.addEventListener('submit', (e) => {
     
     validate();
 });
-function validate () {
-    const emailVal = email.value.trim();
-    const nameVal = name.value.trim();
-    const msgVal = name.value.trim();
-    
-    if (nameVal === '') {
-        console.log("Name field cant be empty");
-        showError(name, "The name field cant be empty.")
+
+function validate() {
+    // trim to remove the whitespaces
+    const usernameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const messageValue = msg.value.trim();
+
+    if (usernameValue === '') {
+        setErrorFor(name, 'Name cannot be blank');
     } else {
-        console.log("Your name is : " + nameVal);
-        showSuccess(name)
+        setSuccessFor(name, "Valid name");
+    }
+
+    if (emailValue === '') {
+        setErrorFor(email, 'Email cannot be blank');
+    } else if (!isEmail(emailValue)) {
+        setErrorFor(email, 'Not a valid email');
+    } else {
+        setSuccessFor(email, "Valid email");
+    }
+
+    if (messageValue === '') {
+        setErrorFor(msg, 'Message cannot be blank');
+    } else {
+        setSuccessFor(msg, "Valid message");
     }
     
-    if (msgVal === '') {
-        console.log("Message field cant be empty");
-        showError(msg, "The message field cant be empty.")
-    } else {
-        console.log("Your message consits of : " + msgVal);
-        showSuccess(msg)
-    }
-    
-    if (emailVal === '') {
-        console.log("Please input a valid email");
-        showError(email, "Please input a valid email.")
-    } else if (!checkEmail(emailVal)) {
-        showError(email, "Not a valid Email.")
-        console.log("Your email doesnt contain the correct email types.");
-        showSuccess(email)
-    } else {
-        console.log("Correct email, your email is : " +  email.value);
-        showSuccess(email)
-    }
 }
 
-function showError (input, message) {
+function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
-    formControl.className = 'section-container columns.content content-container formControl error input';
+    small.style.display = "block";
+    small.style.color = "red";
     small.innerText = message
 }
-function showSuccess (input) {
+
+function setSuccessFor(input, message) {
+    //const formControl = input.parentElement;
+    //formControl.className = 'form-control success';
     const formControl = input.parentElement;
-    formControl.className = 'section-container columns.content content-container formControl success input';
+    const small = formControl.querySelector('small');
+    small.style.display = "block";
+    small.style.color  = "rgb(46, 223, 132)";
+    small.innerText = message;
 }
-function checkEmail (email) {
+
+function isEmail(email) {
+    //return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     return Regx.test(email);
-    //return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-//     let Regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 /*
 const scrollTracker = document.querySelector('.scrollTracker');
@@ -151,7 +153,7 @@ const htmlHeight = htmlBorder.offsetHeight;
 const animatedH1W = new ScrollTimeline({
     scrollOffsets: [
         CSS.px(htmlOffsetTop + htmlHeight - window.innerHeight),
-        CSS.px(htmlOffsetTop - 250)
+        CSS.px(htmlOffsetTop - 125)
     ]
 });
 htmlBorder.animate(
