@@ -24,6 +24,14 @@ a {
   text-decoration: none;
   color: #fff !important;
 }
+.h1Diff {
+  font-size: 55px;
+  font-weight: 750;
+}
+.h2Diff {
+  font-size: 25px;
+  font-weight: 1500;
+}
 li {
   list-style: none;
 }
@@ -155,6 +163,14 @@ input[type="checkbox"] {
   }
   .mainContentL h1 p {
     width: 100%;
+  }
+  .h1Diff {
+    font-size: 55px;
+    font-weight: 750;
+  }
+  .h2Diff {
+    font-weight: 500;
+    font-size: 15px;
   }
 }
 /* Navbar */
@@ -426,31 +442,23 @@ input[type=text], input[type=email] {
   border-bottom: 1px solid var(--overairPink) !important;
   background-color: #FAF9F6FF;
 }
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 2px;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 100px 100px 80px rgba(0, 0, 0, 0.07);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--overairPink) !important;
+  background-color: #FAF9F6FF;
+  resize: both;
+  overflow: auto;
+}
 .form-control {
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-}
-.formControl .error input {
-  border: 1px solid #FE0300;
-  animation: shake;
-}
-.formControl .success input {
-  border: 1px solid rgb(46, 223, 132);
-}
-.formControl small {
-  display: none;
-}
-@keyframes shake {
-  33% {
-    transform: translateX(4px);
-  }
-  66% {
-    transform: translateX(-4px);
-  }
-  99% {
-    transform: translateX(4px);
-  }
 }
 .footerr {
   background-color: var(--overairGrey);

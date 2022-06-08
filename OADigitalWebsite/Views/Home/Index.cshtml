@@ -8,9 +8,9 @@
 
 <body>
 <div class="bg">
-    <div class="text-center fontWhite">
-        <h2>Websites or apps, all available to aquire in one location!</h2>
-        <h1>Get it, because you can.</h1>
+    <div class="fontWhite text-center">
+        <h2 class="h2Diff">Websites or apps, all available to aquire in one location!</h2>
+        <h1 class="h1Diff">Get it, because you can.</h1>
         <br/>
         <div class="flex">
             <a href="#userBook">
@@ -149,25 +149,26 @@
     <div class="columns content" id="userBook">
         <div class="content-container">
             <h1><span><i class="fa-solid fa-calendar" style="margin-right: 0.5rem; color: #666666;"></i></span>Contact Us</h1>
-            <form id="form" action="https://formsubmit.co/kacperileon@gmail.com" method="POST" enctype="text/plain">
+            <form id="form" action="https://formspree.io/f/xoqrbeky" method="post">
                 <div class="overairD"></div>
                 <input type="hidden" name="_captcha" value="false"/> <!-- Disables reCAPTCHA -->
 
                 <div class="form-control">
-                    <input class="error" id="name" type="text" placeholder="Name" name="Name"/>
-                    <small>Error Msg</small>
+                    <input id="name" type="text" placeholder="Name" name="Name" />
+                    <small style="display: none;">Error Msg</small>
                 </div>
 
                 <div class="form-control">
-                    <input class="success" id="email" type="email" placeholder="Email" name="Email"/>
-                    <small>Error Msg</small>
+                    <input id="email" type="email" placeholder="Email" name="Email"/>
+                    <small style="display: none;">Error Msg</small>
                 </div>
 
                 <div class="form-control">
-                    <input id="message" type="text" placeholder="Message" name="Message"/>
-                    <small>Error Msg</small>
+                    <textarea id="message" type="text" placeholder="Message" rows="2" cols="25" name="Message"></textarea>
+                    <!--<input id="message" type="text" placeholder="Message" name="Message"/>-->
+                    <small style="display: none;">Error Msg</small>
                 </div>
-
+ 
                 <button class="btn2" type="submit">
                     <span class="btnspan2">Submit</span>
                 </button>

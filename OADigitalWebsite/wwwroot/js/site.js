@@ -5,42 +5,38 @@ let form = document.querySelector('#form');
 let email = document.querySelector('#email');
 let name = document.querySelector('#name');
 let msg = document.querySelector('#message');
+//let small = document.querySelector('small');
 let Regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    
-    validate();
-});
-
-function validate() {
-    // trim to remove the whitespaces
     const usernameValue = name.value.trim();
     const emailValue = email.value.trim();
     const messageValue = msg.value.trim();
 
     if (usernameValue === '') {
+        e.preventDefault();
         setErrorFor(name, 'Name cannot be blank');
     } else {
         setSuccessFor(name, "Valid name");
     }
 
     if (emailValue === '') {
+        e.preventDefault();
         setErrorFor(email, 'Email cannot be blank');
     } else if (!isEmail(emailValue)) {
+        e.preventDefault();
         setErrorFor(email, 'Not a valid email');
     } else {
         setSuccessFor(email, "Valid email");
     }
 
     if (messageValue === '') {
+        e.preventDefault();
         setErrorFor(msg, 'Message cannot be blank');
     } else {
         setSuccessFor(msg, "Valid message");
     }
-    
-}
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
@@ -55,15 +51,16 @@ function setSuccessFor(input, message) {
     //formControl.className = 'form-control success';
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
-    small.style.display = "block";
+    small.style.display = "block";    
     small.style.color  = "rgb(46, 223, 132)";
     small.innerText = message;
 }
 
 function isEmail(email) {
-    //return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     return Regx.test(email);
 }
+});
+
 
 /*
 const scrollTracker = document.querySelector('.scrollTracker');
