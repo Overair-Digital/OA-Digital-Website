@@ -1,5 +1,5 @@
 :root {
-  --overairPink: #EC008C;
+  --overairPink: #ec008c;
   --overairGrey: #474747;
   --overairBlack: #000000;
 }
@@ -9,7 +9,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", serif;
-  
 }
 .fontColour {
   color: var(--overairPink);
@@ -201,11 +200,11 @@ input[type="checkbox"] {
 }
 .btn:hover {
   color: black !important;
-  background-color: rgb(250, 249, 246);
+  background-color: var(--overairPink);
   animation: btnrotate 0.7s ease-in-out both;
 }
 .btn:hover .btnspan {
-  color: black;
+  color: #fff;
   animation: btnstorm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
@@ -288,10 +287,11 @@ input[type="checkbox"] {
 .bg {
   padding-block: 15rem;
   margin-block-end: 0;
-  background-image: url("../Images/background.png");
+  background-image: url("../Images/bg2.jpg");
   background-position: center;
   background-size: cover;
 }
+/* Main Content Page */
 .subHeader1 {
   padding-block: 3rem;
   margin-block-end: 0;
@@ -300,7 +300,6 @@ input[type="checkbox"] {
   background-position: center;
   background-size: cover;
 }
-/* Main Content Page */
 .mainPageTopper {
   height: 100px;
   width: 100vw;

@@ -15,7 +15,7 @@
         <div class="flex">
             <a href="#userBook">
                 <button class="btn">
-                    <span class="btnspan">Book An Appoitment</span>
+                    <span class="btnspan">Get In Touch</span>
                 </button>
             </a>
         </div>
@@ -24,11 +24,9 @@
 
 <div class="subHeader1">
     <div class="text-center fontWhite">
-        <div>
-            <h1 class="headerDown">What can we offer you?</h1>
-            <h2>To be honest with you, anything which involves apps or websites.</h2>
-            <h3>We can do without a problem.</h3>
-        </div>
+        <h1 class="headerDown">What can we offer you?</h1>
+        <h2>To be honest with you, anything which involves apps or websites.</h2>
+        <h3>We can do without a problem.</h3>
     </div>
 </div>
 
@@ -40,7 +38,7 @@
 
 <div class="section-container fontWhite">
     <div class="columns content">
-        <div class="content-container">
+        <div class="content-container" style="background-image:url('bgTextures/Dot Grid.svg'); background-repeat: no-repeat;">
             <h1><span><i class="fa-brands fa-apple" style="padding-right: 0.5rem;"></i></span>Apple Apps</h1>
             <div class="apple"></div>
             <p>
@@ -59,7 +57,7 @@
     <div class="columns image" id="icecreamDoodle" style="background-image:url('bgTextures/IceCreamDoodle.svg');">
     </div>
     <div class="columns content">
-        <div class="content-container" style="background-color: rgb(250, 249, 246);">
+        <div class="content-container" style="background-color: rgb(250, 249, 246); background-image:url('bgTextures/Dot Grid.svg'); background-repeat: no-repeat; float: right;">
             <h1><span><i class="fa-brands fa-android" style="color: rgb(46, 223, 132); padding-right: 0.5rem; position: relative; top: 5px;"></i></span>Android Apps</h1>
             <div class="android"></div>
             <p>
@@ -74,7 +72,7 @@
 
 <div class="section-container fontWhite">
     <div class="columns content">
-        <div class="content-container">
+        <div class="content-container" style="background-image:url('bgTextures/Dot Grid.svg'); background-repeat: no-repeat; ">
             <h1><span><i class="fa-brands fa-html5" style="color: rgb(235, 89, 40); padding-right: 0.5rem;"></i></span>Websites</h1>
             <div class="web"></div>
             <p>
@@ -149,21 +147,22 @@
     <div class="columns content" id="userBook">
         <div class="content-container">
             <h1><span><i class="fa-solid fa-calendar" style="margin-right: 0.5rem; color: #666666;"></i></span>Contact Us</h1>
+            
             <form id="form" action="https://formspree.io/f/xoqrbeky" method="post">
                 <div class="overairD"></div>
                 <input type="hidden" name="_captcha" value="false"/> <!-- Disables reCAPTCHA -->
 
-                <div class="form-control">
+                <div class="form-control text-center">
                     <input id="name" type="text" placeholder="Name" name="Name" />
                     <small style="display: none;">Error Msg</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control text-center">
                     <input id="email" type="email" placeholder="Email" name="Email"/>
                     <small style="display: none;">Error Msg</small>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control text-center">
                     <textarea id="message" type="text" placeholder="Message" rows="2" cols="25" name="Message"></textarea>
                     <!--<input id="message" type="text" placeholder="Message" name="Message"/>-->
                     <small style="display: none;">Error Msg</small>
@@ -173,33 +172,6 @@
                     <span class="btnspan2">Submit</span>
                 </button>
             </form>
-            <!--
-            <div class="ok">
-                <h1><span><i class="fa-solid fa-calendar" style="margin-right: 0.5rem; color: #666666;"></i></span>Contact Us</h1>
-                <div class="overairD"></div>
-                <input type="hidden" name="_captcha" value="false"/>  Disables reCAPTCHA 
-
-                <div class="formControl">
-                    <input class="error" id="name" type="text" placeholder="Name" name="Name"/>
-                    <small>Error Message</small>
-                </div>
-
-                <div class="formControl">
-                    <input class="success" id="email" type="email" placeholder="Email" name="Email"/>
-                    <small>Error Message</small>
-                </div>
-
-                <div class="formControl">
-                    <input id="message" type="text" placeholder="Message" name="Message"/>
-                    <small>Error Message</small>
-                </div>
-
-                <button class="btn2" type="submit">
-                    <span class="btnspan2">Submit</span>
-                </button>
-                <img src="Icons/Github/github.json" alt="" style="height: 50px; width:  50px;"/>
-            </div>
-            -->
             <br/>
             <p>
                 <span><i class="fa-solid fa-phone" style="color: #EC008C; margin-right: 0.5rem;"></i>Phone Number - 07577 607224</span>
