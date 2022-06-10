@@ -150,7 +150,7 @@ const htmlHeight = htmlBorder.offsetHeight;
 const animatedH1W = new ScrollTimeline({
     scrollOffsets: [
         CSS.px(htmlOffsetTop + htmlHeight - window.innerHeight),
-        CSS.px(htmlOffsetTop - 125)
+        CSS.px(htmlOffsetTop - 250)
     ]
 });
 htmlBorder.animate(
