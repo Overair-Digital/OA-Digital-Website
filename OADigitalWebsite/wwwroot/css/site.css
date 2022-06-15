@@ -242,8 +242,7 @@ input[type="checkbox"] {
   animation: btnstorm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
-/*
-.btn2 {
+.btn3 {
   outline: none;
   text-decoration: none;
   border-radius: 50px;
@@ -252,30 +251,17 @@ input[type="checkbox"] {
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
+  background-color: #fff;
   height: 45px;
   width: 100%;
   opacity: 1;
-  border: 1px solid black;
-  background-color: #FAF9F6FF !important;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
-.btn2 .btnspan2 {
-  color: black;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.7px;
-}
-.btn2:hover {
-  color: black !important;
-  background-color: var(--overairPink) !important;
-  border: 1px solid #FAF9F6FF !important;
+.btn3:hover {
+  background-color: var(--overairPink);
+  color: white;
   animation: btnrotate 0.7s ease-in-out both;
 }
-.btn2:hover .btnspan2 {
-  color: #FAF9F6FF;
-  animation: btnstorm 0.7s ease-in-out both;
-  animation-delay: 0.06s;
-}
- */
 @keyframes btnrotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
