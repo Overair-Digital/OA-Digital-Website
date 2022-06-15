@@ -3,6 +3,9 @@
   --overairGrey: #474747;
   --overairBlack: #000000;
 }
+@font-face {
+  font-family: "Roboto", serif;
+}
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -545,10 +548,10 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   overflow: hidden;
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
+  border-radius: 24px;
 }
 .card__body {
   padding: 1rem;
@@ -584,36 +587,10 @@ img {
   -webkit-text-fill-color: transparent;
   animation: backgroundGrad 40s linear infinite;
 }
-.gradientText2 {
-  font-size: 50px;
-  font-weight: 600;
-  outline: none;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, #B0D0D3 0%, #C08497 25%, #F7AF9D 50%, #F7E3AF 75%, #F3EEC3 100%);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: backgroundGrad 40s linear infinite;
-}
-.gradientText3 {
-  font-size: 50px;
-  font-weight: 600;
-  outline: none;
-  text-transform: uppercase;
-  background: linear-gradient(135deg, #721817 0%, #FA9F42 25%, #2B4162 50%, #0B6E4F 75%, #16F4D0 100%);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: backgroundGrad 40s linear infinite;
-}
 @keyframes backgroundGrad {
   to {
     background-position: 400%;
   }
-}
-.cardP {
-  font-size: 18px;
-  font-weight: 550;
 }
 .coolh1 {
   font-size: 48px;
