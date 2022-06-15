@@ -540,6 +540,7 @@ img {
   max-width: 100%;
   display: block;
   object-fit: cover;
+  height: 250px;
 }
 .card {
   display: flex;
@@ -563,24 +564,6 @@ img {
   font-weight: 1000;
   font-size: 35px;
 }
-/*
-.tag-blue {
-  background: #56CCF2;
-  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-  color: #FAF9F6FF;
-}
-
-.tag-brown {
-  background: #D1913C;
-  background: linear-gradient(to bottom, #FFD194, #D1913C);
-  color: #FAF9F6FF;
-}
-.tag-red {
-  background: #cb2d3e;
-  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-  color: #FAF9F6FF;
-}
-*/
 .card__body h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -606,7 +589,7 @@ img {
   font-weight: 600;
   outline: none;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #CC8B86 0%, #44ffd2 25%, #87F6FF 50%, #DAF5FF 75%, #FFBFA0 100%);
+  background: linear-gradient(135deg, #B0D0D3 0%, #C08497 25%, #F7AF9D 50%, #F7E3AF 75%, #F3EEC3 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -631,4 +614,8 @@ img {
 .cardP {
   font-size: 18px;
   font-weight: 550;
+}
+.coolh1 {
+  font-size: 48px;
+  font-weight: 800;
 }
