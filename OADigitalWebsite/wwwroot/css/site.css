@@ -165,9 +165,6 @@ input[type="checkbox"] {
   .headerDown {
     padding-top: 2.5rem;
   }
-  .test {
-    padding-bottom: 2.5rem;
-  }
   .mainContentL h1 p {
     width: 100%;
   }
@@ -256,7 +253,6 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  text-transform: uppercase;
   background-color: #fff;
   height: 45px;
   width: 100%;
@@ -265,7 +261,7 @@ input[type="checkbox"] {
 }
 .btn3:hover {
   background-color: var(--overairPink);
-  color: white;
+  color: white !important;
   animation: btnrotate 0.7s ease-in-out both;
 }
 @keyframes btnrotate {
@@ -550,7 +546,7 @@ img {
   border-radius: 24px;
 }
 .card__body {
-  font-size: 20px;
+  font-size: 18px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -588,11 +584,4 @@ img {
   to {
     background-position: 400%;
   }
-}
-.coolh1 {
-  font-size: 48px;
-  font-weight: 800;
-}
-.bgbg {
-  background: linear-gradient(135deg, rgba(229, 106, 179, 0.3) 0%, rgba(239, 135, 190, 0.3) 25%, rgba(249, 163, 203, 0.3) 50%, rgba(252, 188, 215, 0.3) 75%, rgba(229, 106, 179, 0.3) 100%)
 }
