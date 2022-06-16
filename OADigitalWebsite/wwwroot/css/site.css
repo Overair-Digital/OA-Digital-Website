@@ -244,26 +244,6 @@ input[type="checkbox"] {
   animation: btnstorm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
-.btn3 {
-  color: black !important;
-  outline: none;
-  text-decoration: none;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background-color: #fff;
-  height: 45px;
-  width: 100%;
-  opacity: 1;
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-.btn3:hover {
-  background-color: var(--overairPink);
-  color: white !important;
-  animation: btnrotate 0.7s ease-in-out both;
-}
 @keyframes btnrotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
@@ -333,8 +313,8 @@ input[type="checkbox"] {
 .subHeader1 {
   padding-block: 3rem;
   margin-block-end: 0;
-  background-image: url("../bgTextures/Untitled design (2).png");
-  /*background-image: url("../Videos/3254587022.mp4");*/
+  background-color: var(--overairGrey);
+  background-image: url("../bgTextures/Dot Grid.svg");
   background-position: center;
   background-size: cover;
 }
@@ -343,6 +323,11 @@ input[type="checkbox"] {
   width: 100vw;
   /*background-color: var(--overairGrey);*/
   background-color: #FAF9F6FF;
+}
+.us {
+  padding-block: 8rem;
+  margin-block-end: 0;
+  background-color: var(--overairGrey);
 }
 .section-container {
   background-color: var(--overairGrey);
@@ -436,17 +421,6 @@ input[type="checkbox"] {
     transform: rotate(-6deg);
   }
 }
-#icecreamDoodle {
-  animation: walk 4s alternate ease-in-out infinite;
-}
-@keyframes walk {
-  from {
-    transform: translateX(40px);
-  }
-  to {
-    transform: translateX(-35px);
-  }
-}
 #meditateDoodle {
   animation: levitate 2s alternate ease-in-out infinite;
 }
@@ -459,24 +433,6 @@ input[type="checkbox"] {
   }
 }
 /* Main Content Page */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 10px;
-}
-td, th {
-  /*border: 1px solid var(--overairPink);*/
-  padding: 8px;
-  text-align: left;
-}
-
-tr:nth-child(odd) {
-  /*
-  background-color: rgba(250, 249, 246, 0.6)/*#FAF9F6FF rgba(102, 102, 102, 0.2);
-  */
-  border-bottom: 1px solid var(--overairPink);
-  border-radius: 5px;
-}
 input[type=text], input[type=email] {
   color: #fff;
   display: inline-block;
@@ -574,7 +530,7 @@ img {
   font-weight: 600;
   outline: none;
   text-transform: uppercase;
-  background: linear-gradient(135deg, var(--overairPink) 0%, #E76F51 25%, #E9C46A 50%, #2A9D8F 75%, var(--overairPink) 100%);
+  background: linear-gradient(135deg, var(--overairPink) 0%, #E899DC 25%, #D387AB 74%, var(--overairPink) 100%);
   background-size: 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
