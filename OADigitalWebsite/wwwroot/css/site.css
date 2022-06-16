@@ -248,6 +248,7 @@ input[type="checkbox"] {
   animation-delay: 0.06s;
 }
 .btn3 {
+  color: black !important;
   outline: none;
   text-decoration: none;
   border-radius: 50px;
@@ -344,7 +345,8 @@ input[type="checkbox"] {
 .mainPageTopper {
   height: 100px;
   width: 100vw;
-  background-color: var(--overairGrey);
+  /*background-color: var(--overairGrey);*/
+  background-color: #FAF9F6FF;
 }
 .section-container {
   background-color: var(--overairGrey);
@@ -373,20 +375,23 @@ input[type="checkbox"] {
   font-size: 25px;
 }
 .section-container .columns.content .content-container .android {
-  border-bottom: 3px solid rgb(46, 223, 132);
+  /*border-bottom: 3px solid rgb(46, 223, 132);*/
+  border-bottom: 3px solid rgb(235, 89, 40);
   border-radius: 5px;
   transform-origin: right;
 }
 .section-container .columns.content .content-container .apple {
-  border-bottom: 3px solid rgb(255, 255, 255);
+  border-bottom: 3px solid #666666;
   border-radius: 5px;
   transform-origin: left;
 }
+/*
 .section-container .columns.content .content-container .web {
   border-bottom: 3px solid rgb(235, 89, 40);
   border-radius: 5px;
-  transform-origin: left;
+  transform-origin: right;
 }
+ */
 .section-container .columns.content .overairD {
   border-bottom: 3px solid var(--overairPink);
   border-radius: 5px;
@@ -406,7 +411,7 @@ input[type="checkbox"] {
     display: block;
     order: 2;
     width: 100%;
-    height: 250px;
+    height: 375px;
   }
   .section-container .columns.content {
     display: block;
@@ -440,7 +445,7 @@ input[type="checkbox"] {
 }
 @keyframes walk {
   from {
-    transform: translateX(50px);
+    transform: translateX(40px);
   }
   to {
     transform: translateX(-35px);
