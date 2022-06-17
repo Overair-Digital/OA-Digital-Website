@@ -22,13 +22,4 @@
       <_ContentIncludedByDefault Remove="wwwroot\Icons\Github\github.svg" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Content Include="..\..\..\Downloads\favicon_package_v0.16 (1)\favicon-16x16.png">
-        <Link>wwwroot\Icon\favicon-16x16.png</Link>
-      </Content>
-      <Content Include="..\..\..\Downloads\favicon_package_v0.16 (1)\favicon-32x32.png">
-        <Link>wwwroot\Icon\favicon-32x32.png</Link>
-      </Content>
-    </ItemGroup>
-
 </Project>
