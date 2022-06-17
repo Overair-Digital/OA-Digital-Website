@@ -128,7 +128,6 @@ input[type="checkbox"] {
     top: 80px;
     left: -100%;
     background: #111;
-    /* background: rgba(17, 17, 17, 0.8); */
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -286,7 +285,6 @@ input[type="checkbox"] {
   position: relative;
   bottom: 3.5rem;
   color: var(--overairPink) !important;
-  /*border-bottom: 1px solid white;*/
 }
 .arrow {
   animation: bounce 2s infinite ease-in;
@@ -321,7 +319,6 @@ input[type="checkbox"] {
 .mainPageTopper {
   height: 100px;
   width: 100vw;
-  /*background-color: var(--overairGrey);*/
   background-color: #FAF9F6FF;
 }
 .us {
