@@ -130,7 +130,7 @@ const androidHeight = androidBorder.offsetHeight;
 const animatedH1A = new ScrollTimeline({
     scrollOffsets: [
         CSS.px(androidOffsetTop + androidHeight - window.innerHeight),
-        CSS.px(androidOffsetTop - 250)
+        CSS.px(androidOffsetTop - 300)
     ]
 });
 androidBorder.animate(
@@ -140,25 +140,5 @@ androidBorder.animate(
         duration: 1,
         easing: "linear",
         timeline: animatedH1A
-    },
-);
-
-const htmlBorder = document.querySelector('.web');
-const htmlOffsetTop = htmlBorder.offsetTop; //Html border dims
-const htmlHeight = htmlBorder.offsetHeight;
-
-const animatedH1W = new ScrollTimeline({
-    scrollOffsets: [
-        CSS.px(htmlOffsetTop + htmlHeight - window.innerHeight),
-        CSS.px(htmlOffsetTop - 250)
-    ]
-});
-htmlBorder.animate(
-    {
-        transform: ["scaleX(0)", "scaleX(1)"],
-    }, {
-        duration: 1,
-        easing: "linear",
-        timeline: animatedH1W
     },
 );

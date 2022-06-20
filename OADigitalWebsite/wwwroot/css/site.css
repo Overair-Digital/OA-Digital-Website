@@ -15,6 +15,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+p {
+  line-height: 25px;
+}
 .fontColour {
   color: var(--overairPink);
 }
@@ -283,7 +286,7 @@ input[type="checkbox"] {
 }
 .iconUp {
   position: relative;
-  bottom: 3.5rem;
+  bottom: 2rem;
   color: var(--overairPink) !important;
 }
 .arrow {
@@ -308,16 +311,17 @@ input[type="checkbox"] {
   background-size: cover;
 }
 /* Main Content Page */
+
 .subHeader1 {
-  padding-block: 3rem;
+  padding-block: 2rem;
   margin-block-end: 0;
   background-color: var(--overairGrey);
   background-image: url("../bgTextures/Dot Grid.svg");
   background-position: center;
-  background-size: cover;
+  /*background-size: cover;*/
 }
 .mainPageTopper {
-  height: 100px;
+  height: 50px;
   width: 100vw;
   background-color: #FAF9F6FF;
 }
@@ -375,11 +379,9 @@ input[type="checkbox"] {
   border-radius: 5px;
 }
 .section-container .columns.content .content-container p {
-  font-weight: 450;
-  font-size: 18px;
-  margin-bottom: 20px;
-  margin-bottom: 15px;
-  text-align: justify;
+  font-weight: 550;
+  margin-bottom: 7px;
+  font-size: 17px;
 }
 @media screen and (max-width:767px) {
   .section-container {
