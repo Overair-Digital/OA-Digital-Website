@@ -130,7 +130,7 @@ const androidHeight = androidBorder.offsetHeight;
 const animatedH1A = new ScrollTimeline({
     scrollOffsets: [
         CSS.px(androidOffsetTop + androidHeight - window.innerHeight),
-        CSS.px(androidOffsetTop - 300)
+        CSS.px(androidOffsetTop - 500)
     ]
 });
 androidBorder.animate(
