@@ -61,48 +61,6 @@ function isEmail(email) {
 }
 });
 
-
-/*
-const scrollTracker = document.querySelector('.scrollTracker');
-const scrollTracking = new ScrollTimeline({
-    source: document.scrollingElement,
-    orientation: "block",
-    scrollOffsets: [CSS.percent(0), CSS.percent(100)]
-});
-scrollTracker.animate(
-    {
-        transform: ["scaleX(0)", "scaleX(1)"],
-    },
-    {
-        duration: 1,
-        timeline: scrollTracking
-    }
-);
-*/
-
-const arrowDown = document.querySelector('.arrow');
-const imgOffSetTop = arrowDown.offsetTop;
-const imgHeight = arrowDown.offsetHeight;
-
-const animatedArrowDown = new ScrollTimeline({
-    scrollOffsets: [
-        //{ target: arrowDown, edge: "end", threshold: "1" },
-        //{ target: arrowDown, edge: "start", threshold: "1" }
-        CSS.px(imgOffSetTop + imgHeight - window.innerHeight),
-        CSS.px(imgOffSetTop - 350)
-    ],
-});
-arrowDown.animate(
-    {
-        transform: ["translateY(100px)", "translateY(0px)"],
-        opacity: ["0", "1"],
-    }, {
-        duration: 1,
-        easing: "linear",
-        timeline: animatedArrowDown
-    }
-);
-
 const appleBorder = document.querySelector('.apple');
 const h1topOffset = appleBorder.offsetTop; //Apple border dims
 const h1height = appleBorder.offsetHeight;
