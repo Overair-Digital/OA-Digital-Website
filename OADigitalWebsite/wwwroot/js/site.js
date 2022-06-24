@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
     } else {
         setSuccessFor(msg, "Valid message");
     }
-
+    
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
