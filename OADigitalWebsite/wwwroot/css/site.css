@@ -190,6 +190,9 @@ input[type="checkbox"] {
   ::placeholder {
     font-size: 18px;
   }
+  ::-ms-value {
+    font-size: 18px;
+  }
   .mobileBig {
     font-size: 16px;
   }
@@ -302,12 +305,10 @@ input[type="checkbox"] {
 .bg {
   padding-block: 15rem;
   margin-block-end: 0;
-  background-image: linear-gradient(135deg, rgba(229, 106, 179, 0.3) 0%, rgba(239, 135, 190, 0.3) 25%, rgba(249, 163, 203, 0.3) 50%, rgba(252, 188, 215, 0.3) 75%, rgba(229, 106, 179, 0.3) 100%),url("../Images/bg2.jpg");
   background-position: center;
   background-size: cover;
 }
 /* Main Content Page */
-
 .subHeader1 {
   padding-block: 2rem;
   margin-block-end: 0;
@@ -324,11 +325,6 @@ input[type="checkbox"] {
 .mainPageTopper2 {
   height: 25px;
   width: 100vw;
-  background-color: var(--overairGrey);
-}
-.us {
-  padding-block: 8rem;
-  margin-block-end: 0;
   background-color: var(--overairGrey);
 }
 .section-container {
@@ -441,9 +437,6 @@ input[type=text], input[type=email] {
   /*background-color: #FAF9F6FF;*/
   background-color: var(--overairGrey);
 }
-::placeholder {
-  color: #fff;
-}
 textarea {
   color: #fff;
   display: inline-block;
@@ -458,6 +451,9 @@ textarea {
   background-color: var(--overairGrey);
   resize: both;
   overflow: auto;
+}
+::placeholder {
+  color: #fff;
 }
 .form-control {
   border-radius: 0;
