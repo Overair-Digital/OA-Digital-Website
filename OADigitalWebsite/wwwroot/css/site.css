@@ -196,6 +196,9 @@ input[type="checkbox"] {
   .mobileBig {
     font-size: 16px;
   }
+  label {
+    font-size: 16px;
+  }
 }
 /* Navbar */
 .flex {
@@ -438,6 +441,9 @@ input[type=text], input[type=email] {
   /*background-color: #FAF9F6FF;*/
   background-color: var(--overairGrey);
 }
+input[type=radio] {
+  accent-color: var(--overairPink);
+}
 textarea {
   color: #fff;
   display: inline-block;
@@ -482,6 +488,10 @@ img {
   object-fit: cover;
   display: block;
   height: 415px;
+}
+.radioFlex {
+  display: flex;
+  justify-content: space-around;
 }
 .gradientText {
   /*font-size: 50px;*/
